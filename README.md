@@ -20,4 +20,4 @@ This project is a straightforward login screen implemented using HTML and CSS. I
 To get started with this project, simply clone or download the repository to your local machine:
 
 ```shell
-git clone https://github.com/your-username/login-screen.git
+git clone https://github.com/zubair-oclouds/-ve-login-screen.git
