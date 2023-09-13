@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <title>Virtual Escape</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <p id="title">VIRTUAL ESCAPE</p>
+      <p id="tagline">Enter your game code below to get started</p>
+
+      <!-- <input type="text" placeholder="Game Code" /> -->
+
+      <div class="inp">
+        <input type="text" placeholder="Game Code" />
+        <img src="tooltip.fa2389c4.svg" alt="" class="question-icon">
+          <span class="tooltip-text" id="top"
+            >Your game code is 8 characters long and can be <br />
+            found in the confirmation email. Up to 6 players<br />can use the
+            same game code to log in.</span
+          >
+          
+      </div>
+
+      <div class="buttonContainer">
+        <button id="testconnection">TEST CONNECTION</button>
+        <button id="login">
+          LOG IN &nbsp;<img src="fingerprint-solid.svg" alt="" width="20px"></i>
+        </button>
+      </div>
+
+      <div class="connection-check">
+        <img src="check.687f00e1.svg" alt="" />
+        <!-- <span class="material-symbols-outlined tick-icon"> done </span> -->
+        &nbsp;
+        <span>Connection successful</span>
+      </div>
+    </div>
+    <footer>v6.0.0</footer>
+  </body>
+</html>
