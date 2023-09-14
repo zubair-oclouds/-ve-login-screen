@@ -1,0 +1,64 @@
+body {
+  background-image: url(images/backgroud.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+nav {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+
+#logo {
+  position: sticky;
+  right: 1750px;
+}
+
+.nav-buttons {
+  display: flex;
+}
+
+.nav-buttons img {
+  width: 2em;
+  height: 1.2em;
+}
+
+.nav-buttons button {
+  display: flex;
+  font-size: 13px;
+  margin: 0px 3px;
+  color: white;
+  background-color: #35515d;
+  border-radius: 13px;
+  border-width: 0px;
+  padding: 0.5em 1em;
+  transition: all 0.4s;
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  #logo {
+    width: 120px;
+  }
+
+  .nav-buttons button {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #logo {
+    width: 80px;
+  }
+
+  .nav-buttons button {
+    font-size: 7px;
+  }
+}
