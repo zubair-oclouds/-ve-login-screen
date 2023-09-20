@@ -1,0 +1,224 @@
+body {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  nav {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+  }
+  
+  #logo {
+    position: sticky;
+    right: 1750px;
+  }
+  
+  .nav-buttons {
+    display: flex;
+  }
+  
+  .nav-buttons img {
+    width: 2em;
+    height: 1.2em;
+  }
+  
+  .nav-buttons button {
+    display: flex;
+    font-size: 13px;
+    margin: 0px 3px;
+    color: white;
+    background-color: #35515d;
+    border-radius: 13px;
+    border-width: 0px;
+    padding: 0.5em 1em;
+    transition: all 0.4s;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  
+  .title-section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  #tagline {
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+  }
+  
+  #title {
+    font-family: "Borel", cursive;
+    font-size: 50px;
+  }
+  
+  .card-container {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    background-image: url(images/card-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+    width: 22vh;
+    border-radius: 10px;
+    &:last-child {
+      background-image: url(images/card-red-background.png);
+    }
+  }
+  
+  .icon {
+    background-image: url(icons/Group\ 3\ Copy.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    padding: 0.6em 1.2em;
+  }
+  
+  .icon img {
+    width: 1.5em;
+  }
+  
+  #get-started-icon img {
+    width: 3.5em;
+  }
+
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    max-width: 80vh;
+    width: auto;
+    height: 520px;
+    color: white;
+    background-color: #091B25;
+    padding: 2em 4em;
+    margin: 0px auto;
+    margin-top: 10vh;
+    border-radius: 0.5em;
+  }
+
+  .table-container span{
+    align-self :self-start;
+    font-size: 22px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    text-align: center;
+  }
+
+  td:nth-child(2), th:nth-child(2) {
+    text-align: left;
+  }
+
+  th {
+    background-color: black;
+  }
+  tr:nth-child(even){
+    background-color: #2D4955;
+  }
+  tr:nth-child(odd){
+    background-color: #0E2634;
+  }
+
+  tr:nth-child() {
+    text-align: left;
+  }
+
+  .table-container div{
+    display: flex;
+    background-color: #7B1E1D;
+    border-radius: 0.5em;
+    padding: 0.4em 1.1em;
+    transition: all 0.9s;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  .table-container div button{
+    color: white;
+    background-color: #7B1E1D;
+    border-width: 0px;
+  }
+
+  
+  @media screen and (min-width: 500px) and (max-width: 800px) {
+    #logo {
+      width: 120px;
+    }
+  
+    .nav-buttons button {
+      font-size: 10px;
+    }
+
+    .table-container {
+      height: 480px;
+      padding: 1em 2em;
+    }
+
+    .table-container span{
+      font-size: 19px;
+    }
+
+    table {
+      font-size: 14px;
+    }
+
+    .table-container div button{
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    #logo {
+      width: 80px;
+    }
+  
+    .nav-buttons button {
+      font-size: 7px;
+    }
+
+    .table-container {
+      height: 440px;
+      padding: 0.5em 1em;
+    }
+
+    .table-container span{
+      font-size: 17px;
+    }
+
+    table {
+      font-size: 12px;
+    }
+
+    .table-container div button{
+      font-size: 10px;
+    }
+  }
