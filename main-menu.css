@@ -1,0 +1,150 @@
+body {
+  background-image: url(images/backgroud.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+nav {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+
+#logo {
+  position: sticky;
+  right: 1750px;
+}
+
+.nav-buttons {
+  display: flex;
+}
+
+.nav-buttons img {
+  width: 2em;
+  height: 1.2em;
+}
+
+.nav-buttons button {
+  display: flex;
+  font-size: 13px;
+  margin: 0px 3px;
+  color: white;
+  background-color: #35515d;
+  border-radius: 13px;
+  border-width: 0px;
+  padding: 0.5em 1em;
+  transition: all 0.4s;
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.title-section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+#tagline {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+}
+
+#title {
+  font-family: "Borel", cursive;
+  font-size: 50px;
+}
+
+.card-container {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-image: url(images/card-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 1em;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 25vh;
+  width: 22vh;
+  border-radius: 10px;
+  &:last-child {
+    background-image: url(images/card-red-background.png);
+  }
+}
+
+.icon {
+  background-image: url(icons/Group\ 3\ Copy.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  padding: 0.6em 1.2em;
+}
+
+.icon img {
+  width: 1.5em;
+}
+
+#get-started-icon img {
+  width: 3.5em;
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .card-container {
+    font-size: 14px;
+  }
+
+  #tagline {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+  }
+
+  #title {
+    font-family: "Borel", cursive;
+    font-size: 30px;
+  }
+  #logo {
+    width: 120px;
+  }
+
+  .nav-buttons button {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #tagline {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+  }
+
+  #title {
+    font-family: "Borel", cursive;
+    font-size: 20px;
+  }
+  #logo {
+    width: 80px;
+  }
+
+  .nav-buttons button {
+    font-size: 7px;
+  }
+  .card-container {
+    font-size: 10px;
+  }
+}
